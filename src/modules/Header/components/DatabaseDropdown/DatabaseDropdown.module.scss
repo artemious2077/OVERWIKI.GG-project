@@ -1,0 +1,32 @@
+@import '../../../../app/styles/variables.scss';
+
+.title {
+  color: #010101;
+  font-size: 20px;
+  font-family: sans-serif;
+  background: #f0651400;
+  padding: 14px 20px;
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    background: #f06414;
+    color: #fff;
+  }
+  position: relative;
+}
+
+.databaseSection {
+  position: absolute;
+  z-index: 2;
+}
+.linkBlock {
+  font-size: 20px;
+  width: 286px;
+  padding: 11px 0 11px 13px;
+  background: $only-white;
+  transition: 0.3s;
+  &:hover {
+    background: #15a4f677;
+    color: $only-white;
+  }
+}

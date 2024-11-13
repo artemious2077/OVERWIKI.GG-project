@@ -1,0 +1,12 @@
+@import '../../../app/styles/variables.scss';
+
+.topBanner {
+  background: $darken-orange;
+  width: 100%;
+  padding: 21px 0 21px 0;
+  display: flex;
+  justify-content: center;
+}
+.zAxis {
+  z-index: 1;
+}

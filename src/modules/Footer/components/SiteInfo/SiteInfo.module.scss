@@ -1,0 +1,17 @@
+@import '../../../../app/styles/variables.scss';
+
+.aboutWiki {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: $only-white;
+  h3 {
+    font-size: 24px;
+    font-family: 'Odibee Sans';
+    font-weight: 400;
+  }
+  .aboutWikiInfoText {
+    width: 100%;
+    max-width: 403px;
+  }
+}

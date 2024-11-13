@@ -1,0 +1,114 @@
+@import '../../../../app/styles/variables.scss';
+
+.story {
+  position: relative;
+  padding-top: 48px;
+  color: $only-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../../../app/assets/images/storyBg.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #205da3;
+  padding-bottom: 286px;
+  .storyTitle {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Odibee Sans';
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 4px #00000083;
+  }
+  .storyDescription {
+    font-size: 24px;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000083;
+  }
+  .storyBtn {
+    font-size: 36px;
+    font-family: 'NATS';
+    background: $white-btn-bg;
+    transition: 0.3s;
+    padding: 0 32px;
+    height: 91px;
+    border: none;
+    margin-bottom: 90px;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      background: $white-btn-bg-active;
+      padding: 0 40px;
+    }
+  }
+
+  .dropdownSection {
+    width: 100%;
+    max-width: 1370px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .dropdownBlock {
+      width: 100%;
+      max-width: 667px;
+      border-bottom: 3.4px solid $hero-bg;
+      height: 100%;
+      .dropdownTitle {
+        font-size: 32px;
+        font-family: 'Odibee Sans';
+        font-weight: 400;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .dropdownDescription {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.dropdownTitleBlock {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.storyImg {
+  object-fit: cover;
+  border-radius: 2px;
+  border: 1.6px solid #9fc5f772;
+  height: 350px;
+  overflow: hidden;
+  transition: 0.2s;
+  &:hover {
+    border: 1.6px solid #f6b56fb3;
+  }
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: -17px;
+  width: 100%;
+  transform: rotate(180deg);
+  z-index: 1;
+  .underLine {
+    width: 100%;
+    height: 6px;
+    background: #9fc5f7;
+  }
+  .topLine {
+    width: 900px;
+    height: 12px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: #9fc5f7;
+    margin: auto;
+    margin-bottom: -1px;
+  }
+}

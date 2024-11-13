@@ -1,0 +1,25 @@
+@import '../../../../app/styles/variables.scss';
+
+.characteristicBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.characteristicSection {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  height: 35px;
+  .icon {
+    background: $icons-bg;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    height: 35px;
+    border-radius: 4px;
+  }
+  .title {
+    font-size: 25px;
+    white-space: nowrap;
+  }
+}

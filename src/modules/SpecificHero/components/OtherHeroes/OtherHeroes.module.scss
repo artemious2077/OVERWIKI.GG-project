@@ -1,0 +1,109 @@
+@import '../../../../app/styles/variables.scss';
+
+.otherHeroesSection {
+  padding: 72px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  background-image: url('https://i.imgur.com/aJMDzFk.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.sectionTitle {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Odibee Sans';
+  margin-bottom: 61px;
+  color: $only-white;
+  text-transform: uppercase;
+}
+
+.otherHeroesFrame {
+  display: flex;
+  gap: 29px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.allHeroesBtn {
+  font-size: 36px;
+  font-family: 'NATS';
+  background: $white-btn-bg;
+  padding: 0 32px;
+  height: 91px;
+  border: none;
+  margin-bottom: 90px;
+  border-radius: 4px;
+  transition: 0.3s;
+  &:hover {
+    background: $white-btn-bg-active;
+    padding: 0 40px;
+  }
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  .underLine {
+    width: 100%;
+    height: 6px;
+    background: #181b2a;
+  }
+  .topLine {
+    width: 900px;
+    height: 12px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: #181b2a;
+    margin: auto;
+  }
+}
+
+.heroFrame {
+  width: 194px;
+  background: $only-white;
+  border-radius: 2px;
+  font-family: 'NATS';
+  cursor: pointer;
+  transition: 0.18s;
+  &:hover {
+    transform: scale(106%);
+  }
+  &:hover .avatar {
+    background: $darken-orange;
+  }
+  .avatar {
+    background: $hero-bg;
+    border: 2px solid $only-white;
+    transition: 0.1s;
+  }
+  .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: $only-black;
+    .classIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #000;
+      border-radius: 2px;
+      height: 30px;
+      width: 30px;
+      filter: brightness(0);
+    }
+    p {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}

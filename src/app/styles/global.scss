@@ -1,0 +1,26 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'NATS', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to left, #99acca, #c8d3e5, #99acca);
+}
+
+@font-face {
+  font-family: 'Odibee Sans';
+  src: url(../fonts/OdibeeSans/OdibeeSans-Regular.woff);
+}
+@font-face {
+  font-family: 'NATS';
+  src: url(../fonts/NATS/NATS.woff);
+}
+
+button {
+  cursor: pointer;
+}

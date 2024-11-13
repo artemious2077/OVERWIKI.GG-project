@@ -1,0 +1,20 @@
+@import '../../../../app/styles/variables.scss';
+
+.anyLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: $only-white;
+  h3 {
+    font-size: 24px;
+    font-family: 'Odibee Sans';
+    font-weight: 400;
+  }
+  .link:hover {
+    color: $darken-orange;
+    transition: 0.1s;
+  }
+  .linkContainer:focus {
+    color: rgb(175, 175, 175);
+  }
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Odibee Sans';
+  src: url('OdibeeSans-Regular.woff2') format('woff2'),
+    url('OdibeeSans-Regular.woff') format('woff'),
+    url('OdibeeSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

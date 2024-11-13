@@ -1,0 +1,65 @@
+@import '../../../../app/styles/variables.scss';
+
+.parallaxSection {
+  background-image: url('https://i.imgur.com/TsXfhey.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 16px 0 60px 0;
+  height: 759px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.sectionTitle {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Odibee Sans';
+  margin-bottom: 498px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.heroOne {
+  position: absolute;
+  top: 120px;
+  left: 375px;
+}
+.heroTwo {
+  position: absolute;
+  top: 325px;
+  left: 373px;
+}
+.heroThree {
+  position: absolute;
+  top: 230px;
+  left: 658px;
+}
+
+.playBtn {
+  z-index: 1;
+  font-size: 36px;
+  font-family: 'NATS';
+  color: #ffffffac;
+  background: $orange-btn;
+  padding: 0 32px;
+  height: 91px;
+  border: none;
+  margin-bottom: 90px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    color: $only-white;
+    background: $darken-orange;
+    padding: 0 40px;
+    transition: 0.3s;
+  }
+}
+
+.infoBlock {
+  height: 100%;
+  z-index: 1;
+}

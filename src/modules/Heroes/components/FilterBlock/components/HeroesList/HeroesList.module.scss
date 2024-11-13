@@ -1,0 +1,43 @@
+@import '../../../../../../app/styles/variables.scss';
+
+.heroFrame {
+  width: 194px;
+  background: $only-white;
+  border-radius: 2px;
+  font-family: 'NATS';
+  cursor: pointer;
+  transition: 0.18s;
+  &:hover {
+    transform: scale(106%);
+  }
+  &:hover .avatar {
+    background: $darken-orange;
+  }
+  .avatar {
+    background: $hero-bg;
+    border: 2px solid $only-white;
+    transition: 0.1s;
+  }
+  .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    .classIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #000;
+      border-radius: 2px;
+      height: 30px;
+      width: 30px;
+      filter: brightness(0);
+    }
+    p {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}

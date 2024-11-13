@@ -1,0 +1,21 @@
+.linkContainer {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  color: #010101;
+  font-size: 20px;
+  font-family: sans-serif;
+  background: #f0651400;
+  padding: 14px 20px;
+  transition: 0.2s;
+  &:hover {
+    background: #14b5f09f;
+    color: #1465f09f;
+  }
+  &:focus {
+    background: #f06414;
+    color: #fff;
+  }
+}

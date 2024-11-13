@@ -1,0 +1,168 @@
+@import '../../../../app/styles/variables.scss';
+
+.filterImage {
+  background-image: url('../../../../app/assets/images/heroesBanner.png');
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  .pageTitle {
+    font-size: 44px;
+    color: $only-white;
+    margin: 44px 0 54px 0;
+    font-family: 'Odibee Sans';
+  }
+  .filterFrame {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 30px;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 2px;
+  height: 30px;
+  width: 30px;
+  filter: brightness(0);
+}
+.description {
+  color: $only-white;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  text-shadow: 0px 4px 4px #000;
+  font-family: 'NATS';
+  font-size: 18px;
+}
+
+// hero
+.heroesSection {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.heroFrame {
+  width: 194px;
+  background: $only-white;
+  border-radius: 2px;
+  font-family: 'NATS';
+  cursor: pointer;
+  transition: 0.18s;
+  &:hover {
+    transform: scale(106%);
+  }
+  &:hover .avatar {
+    background: $darken-orange;
+  }
+  .avatar {
+    background: $hero-bg;
+    border: 2px solid $only-white;
+    transition: 0.1s;
+  }
+  .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    .classIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #000;
+      border-radius: 2px;
+      height: 30px;
+      width: 30px;
+      filter: brightness(0);
+    }
+    p {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}
+
+.heroesSection {
+  display: flex;
+  gap: 29px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+  background: $heroesList-bg;
+  padding-bottom: 30px;
+}
+
+//filter btns
+.filterFrame {
+  button {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 82px;
+    background: $white-btn-bg;
+    padding: 26px 32px;
+    font-family: 'NATS';
+    border-radius: 2px;
+    border: 2px solid $only-white;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+    text-transform: uppercase;
+  }
+}
+.allHeroesBtn {
+  font-size: 40px;
+
+  &:hover {
+    background: $white-btn-bg-active !important;
+  }
+  &:focus {
+    background: $white-btn-bg-active;
+  }
+}
+.tankClass {
+  font-size: 24px;
+  font-weight: 400;
+  &:hover {
+    background: #f9a42ccb;
+    border-color: #f9a42ccb;
+  }
+  &:focus {
+    background: #f9a42c;
+    border-color: #f9a42c;
+  }
+}
+.damageClass {
+  font-size: 24px;
+  font-weight: 400;
+  &:hover {
+    background: #e52128cd;
+    border-color: #e52128cd;
+  }
+  &:focus {
+    background: #e52128;
+    border-color: #e52128;
+  }
+}
+.supportClass {
+  font-size: 24px;
+  font-weight: 400;
+  &:hover {
+    background: #02a34acb;
+    border-color: #02a34acb;
+  }
+  &:focus {
+    background: #02a34a;
+    border-color: #02a34a;
+  }
+}

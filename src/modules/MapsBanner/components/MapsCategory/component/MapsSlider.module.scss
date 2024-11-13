@@ -1,0 +1,59 @@
+@import '../../../../../app/styles/variables.scss';
+
+.sideSection {
+  position: relative;
+}
+
+.embla {
+  max-width: 48rem;
+  margin: auto;
+  --slide-size: 55%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  gap: 30px;
+  touch-action: pan-y pinch-zoom;
+}
+.embla__slide {
+}
+
+.embla__slide__last {
+  padding-right: 30px;
+}
+
+//btns
+.leftSlideBtn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 265px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $btnBg-color-1;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: $btnBg-color-2;
+  }
+}
+.rightSlideBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 265px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $btnBg-color-1;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: $btnBg-color-2;
+  }
+}

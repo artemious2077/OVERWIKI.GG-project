@@ -1,0 +1,54 @@
+@import '../../../../app/styles/variables.scss';
+
+.faderSlider {
+  width: 100%;
+  max-width: 905px;
+  margin: auto;
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+}
+.faderSliderViewport {
+  overflow: hidden;
+}
+.faderSliderContainer {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  width: 905px;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  filter: blur(12px) brightness(0.7);
+}
+.slideBtnsContainer {
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 6.6%;
+}
+.slideImg {
+  display: block;
+  object-fit: cover;
+}
+
+.slideArrow {
+  background: #00000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 400px;
+  border: 2px solid #00000000;
+  transition: 0.3s;
+  text-align: center;
+  &:hover {
+    border: 2px solid $white-D9;
+    background: $opacotyWhiteColor;
+  }
+}

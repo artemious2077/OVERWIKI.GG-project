@@ -1,0 +1,47 @@
+.contactsSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 0 19px 0;
+  background: linear-gradient(to left, #121524, #22283f, #121524);
+}
+.gradientLines {
+  width: 100%;
+  background: linear-gradient(to left, #c6d22a, #3d99d5, #ff4e3b);
+  background-size: 200%;
+  animation: gradientAnimation 5s ease infinite;
+  padding: 5px 0 5px 0;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.contactsTitle {
+  font-size: 40px;
+  font-family: 'NATS';
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.contactsFrame {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.icon {
+  transition: 0.1s;
+  &:hover {
+    margin-top: -5px;
+  }
+}

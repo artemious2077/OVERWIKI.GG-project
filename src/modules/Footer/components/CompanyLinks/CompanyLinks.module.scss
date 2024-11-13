@@ -1,0 +1,29 @@
+@import '../../../../app/styles/variables.scss';
+.companyLinks {
+  color: $only-white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Odibee Sans';
+  }
+  .companyFrame {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 383px;
+    justify-content: center;
+    .images {
+      background-repeat: no-repeat;
+      transition: 0.25s;
+      &:hover {
+        filter: contrast(1.9);
+      }
+      .imagesLink:focus {
+        filter: sepia(1) hue-rotate(336deg) saturate(9) contrast(1);
+      }
+    }
+  }
+}

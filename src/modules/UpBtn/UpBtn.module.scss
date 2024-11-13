@@ -1,0 +1,27 @@
+@import '../../app/styles/variables.scss';
+
+.upBtn {
+  background: $btn-bg;
+  padding: 11px 2px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 2px;
+  border: 2px solid #fff;
+  transition: 0.2s;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 999;
+  &:hover {
+    background: $lightOrange;
+  }
+  &:active {
+    background: #fda015;
+    margin-bottom: 5px;
+  }
+  &.show {
+    opacity: 1;
+  }
+}

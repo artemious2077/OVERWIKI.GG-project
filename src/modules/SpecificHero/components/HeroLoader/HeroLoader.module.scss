@@ -1,0 +1,10 @@
+@import '../../../../app/styles/variables.scss';
+
+.loaderBg {
+  background-color: $only-black;
+  width: 100%;
+  height: 2500px;
+  display: flex;
+  padding-top: 140px;
+  justify-content: center;
+}

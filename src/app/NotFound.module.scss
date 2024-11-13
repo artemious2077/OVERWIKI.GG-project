@@ -1,0 +1,87 @@
+@import 'styles/variables.scss';
+
+.background {
+  background-image: url(./assets/images/errorBg.webp);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: darkblue;
+  // первое значение отвечает за width, второе за heigth
+  background-size: 100% auto;
+  display: grid;
+  place-items: center;
+  position: fixed;
+}
+
+.errorBlock {
+  width: 100%;
+  color: $only-white;
+  margin-top: 70px;
+}
+.firstContent {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  height: 209px;
+  background: #f30018;
+  border-top: 2px solid #9c0000;
+  border-bottom: 2px solid #9c0000;
+  h1 {
+    font-size: 96px;
+  }
+  p {
+    font-size: 24px;
+  }
+}
+
+.secondContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 125px;
+  background: #0a0f29;
+  border-bottom: 2px solid #1e3560;
+  cursor: pointer;
+  &:hover p {
+    color: #ec5728;
+  }
+  &:active {
+    .cross {
+      padding: 9px;
+    }
+  }
+  p {
+    font-size: 14px;
+    transition: 0.2s;
+  }
+  .cross {
+    filter: hue-rotate(245deg) saturate(1000%) brightness(0.8);
+    border: 1px solid $only-white;
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    font-family: none;
+  }
+  &:active .cross {
+    filter: hue-rotate(183deg);
+  }
+}
+
+.errorCharacter {
+  width: auto;
+  height: auto;
+  position: fixed;
+  left: auto;
+  margin-right: 60%;
+  top: auto;
+  margin-top: 4.5%;
+  transform: rotate(4.97deg);
+}
+
+.parallaxImg {
+  transition: transform 0.9s ease-out;
+}
