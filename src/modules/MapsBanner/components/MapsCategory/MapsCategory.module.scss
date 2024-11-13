@@ -3,11 +3,12 @@
 .mapsSection {
   background: $heroesList-bg;
   text-align: center;
-  padding-top: 5px;
   padding-bottom: 146px;
 }
 .categoryTitle {
-  font-size: 24px;
-  margin-bottom: 72px;
+  font-size: 40px;
+  height: 60px;
   font-weight: 400;
+  border-bottom: 1px solid $grey;
+  border-width: 100%;
 }
