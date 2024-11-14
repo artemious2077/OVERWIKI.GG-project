@@ -5,9 +5,9 @@ import { UnderBanner } from '@/UI/components/UnderBanner/UnderBanner'
 
 export const Hero = () => {
   return (
-    <section className={styles.heroPage}>
+    <main className={styles.heroPage}>
       <SpecificHero />
-    </section>
+    </main>
   )
 }
 

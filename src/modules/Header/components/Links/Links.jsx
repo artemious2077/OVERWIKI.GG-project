@@ -11,13 +11,13 @@ export const Links = () => {
       <Link href='/pages/maps' className={styles.link}>
         Maps
       </Link>
-      <Link href='/teams' className={styles.link}>
+      <Link href='/pages/teams-comps' className={styles.link}>
         Teams
       </Link>
-      <Link href='/tier-list' className={styles.link}>
+      <Link href='/pages/tier-list' className={styles.link}>
         Tier List
       </Link>
-      <Link href='/gaming-guide' className={styles.link}>
+      <Link href='/pages/gaming-guide' className={styles.link}>
         Gaming guide
       </Link>
       <DatabaseDropdown />

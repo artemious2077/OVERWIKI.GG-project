@@ -6,11 +6,11 @@ import { UnderBanner } from '@/UI/components/UnderBanner/UnderBanner'
 
 export const Maps = () => {
   return (
-    <section className={styles.mapsPage}>
+    <main className={styles.mapsPage}>
       <TopBanner />
       <MapsBanner />
       <UnderBanner />
-    </section>
+    </main>
   )
 }
 export default Maps
