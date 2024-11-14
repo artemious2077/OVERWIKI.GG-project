@@ -48,4 +48,13 @@ const nextConfig = {
     return config
   },
 }
-export default nextConfig
+// Импортируем @next/bundle-analyzer т.к. у нас .mjs расширение
+import withBundleAnalyzer from '@next/bundle-analyzer'
+
+// инициализация @next/bundle-analyzer библиотеки
+const withBundleAnalyzerConfig = withBundleAnalyzer({
+  enabled: process.env.BUILD_ANALYZE === 'true',
+})
+
+// экспорт й-ции withBundleAnalyzer как отдельного модуля с запуском конфига NEXTjs (nextConfig)
+export default withBundleAnalyzerConfig(nextConfig)
