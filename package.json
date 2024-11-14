@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build_analyze": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "next build && start .next\\analyze\\client.html"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^15.0.3",
