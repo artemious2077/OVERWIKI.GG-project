@@ -7,6 +7,7 @@ export const useComps = create((set) => ({
   teamsComps: [],
   compsRequest: async () => {
     const response = await Requester.get(endpoint)
-    set({ teamsComps: response })
+    console.log('Data fetched:', response.data)
+    set({ teamsComps: response.data })
   },
 }))

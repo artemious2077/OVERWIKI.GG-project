@@ -6,13 +6,12 @@
   flex-direction: column;
   overflow: hidden;
   margin-top: 30px;
-  margin-bottom: -12px;
 }
 
 .gradient {
   background: linear-gradient(to bottom, #f64f17bc, #00000060);
   width: 905px;
-  height: 97.5%;
+  height: 100%;
   position: absolute;
   z-index: 1;
 }

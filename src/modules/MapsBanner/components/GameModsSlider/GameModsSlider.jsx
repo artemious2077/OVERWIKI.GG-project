@@ -34,6 +34,10 @@ export const GameModsSlider = () => {
 
   return (
     <section className={styles.faderSlider}>
+      <div className={styles.topLineBar}>
+        <div className={styles.topLine} />
+        <div className={styles.underLine} />
+      </div>
       <div className={styles.faderSliderViewport} ref={emblaRef}>
         <div className={styles.faderSliderContainer}>
           {sliders.map((item) => (
@@ -63,6 +67,10 @@ export const GameModsSlider = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className={styles.underLineBar}>
+        <div className={styles.topLine} />
+        <div className={styles.underLine} />
       </div>
     </section>
   )

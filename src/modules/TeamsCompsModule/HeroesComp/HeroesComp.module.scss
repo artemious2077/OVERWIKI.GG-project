@@ -1,0 +1,38 @@
+@import '../../../app/styles/variables.scss';
+
+.heroSection {
+  display: flex;
+  gap: 6px;
+  padding: 30px 12px;
+  background: $heroesList-bg;
+}
+.heroFrame {
+  width: 194px;
+  background: $only-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 25px;
+  .heroAvatar {
+    object-fit: cover;
+    border: 2px solid $only-white;
+  }
+  .heroInfoBlock {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .heroClass {
+      filter: brightness(0);
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      border: 1px solid $only-black;
+      border-radius: 2px;
+    }
+    .heroName {
+      font-weight: 400;
+      font-size: 19px;
+    }
+  }
+}

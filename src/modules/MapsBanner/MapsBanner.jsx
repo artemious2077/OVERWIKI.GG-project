@@ -15,23 +15,22 @@ export const MapsBanner = () => {
 
   return (
     <main>
-      <section className={styles.bannerSection}>
-        {bannerData.map((item) => (
-          <div key={item.id}>
-            <div className={styles.gradient}></div>
-            <Image
-              src={item.banner}
-              alt='banner'
-              width={905}
-              height={515}
-              className={styles.bannerImg}
-            />
-            <Typography variant='p' className={styles.bannerDescription}>
-              {item.banner_description}
-            </Typography>
-          </div>
-        ))}
-      </section>
+      {bannerData.map((item) => (
+        <section className={styles.bannerSection} key={item.id}>
+          <div className={styles.gradient}></div>
+          <Image
+            src={item.banner}
+            alt='banner'
+            width={905}
+            height={515}
+            className={styles.bannerImg}
+          />
+          <Typography variant='p' className={styles.bannerDescription}>
+            {item.banner_description}
+          </Typography>
+        </section>
+      ))}
+
       <GameModsSlider />
       <MapsCategory />
     </main>

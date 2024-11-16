@@ -1,7 +1,9 @@
+'use client'
 import { useEffect } from 'react'
 import { useComps } from './TeamsCompsApi/TeamsCompsApi'
 import styles from './TeamsCompsModule.module.scss'
 import { Typography } from '@/UI/Typography/Typography'
+import { HeroesComp } from './HeroesComp/HeroesComp'
 
 export const TeamsCompsModule = () => {
   const { teamsComps, compsRequest } = useComps()
@@ -17,7 +19,7 @@ export const TeamsCompsModule = () => {
           <Typography variant='h1' className={styles.compsTitle}>
             {item.comp_title}
           </Typography>
-          {/* comps */}
+          <HeroesComp heroesComp={item} />
         </div>
       ))}
     </section>

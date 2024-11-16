@@ -1,11 +1,9 @@
-.teamsCompsPage {
+.tierListPage {
   background: linear-gradient(to left, #1e2338, #29314c, #1e2338);
   width: 100%;
-  max-width: 1066px;
+  max-width: 952px;
   margin: auto;
   margin: 40px auto 30px auto;
   padding: 30px 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 62px;
+  user-select: none;
 }

@@ -9,6 +9,7 @@ import { ErrorBoundary } from 'next/dist/client/components/error-boundary'
 import Error from './dashboard/error'
 import { Toolbar } from '@/modules/Toolbar/Toolbar'
 import { UpBtn } from '@/modules/UpBtn/UpBtn'
+import { Suspense } from 'react'
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -32,7 +33,9 @@ export const RootLayout = ({ children }) => {
         <Toolbar />
         <Header />
         <ErrorBoundary fallback={<Error />}>
+          {/* <Suspense fallback={<div>Loading...</div>}> */}
           <main>{children}</main>
+          {/* </Suspense> */}
         </ErrorBoundary>
         <UpBtn />
         <Footer />
