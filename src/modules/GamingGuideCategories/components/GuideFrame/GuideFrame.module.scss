@@ -1,0 +1,113 @@
+@import '../../../../app/styles/variables.scss';
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 40px;
+  .numericBlock {
+    display: flex;
+    align-items: center;
+    color: $only-white;
+    width: 100%;
+    max-width: 460px;
+    .leftLine {
+      width: 100%;
+      max-width: 195px;
+      height: 3px;
+      background: #fda015;
+    }
+    .rightLine {
+      width: 100%;
+      max-width: 195px;
+      height: 3px;
+      background: #fda015;
+    }
+    .number {
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px;
+      height: 70px;
+      border: 2px solid #fda015;
+      border-radius: 50px;
+    }
+  }
+  .guideTitle {
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    height: 35px;
+    color: $only-white;
+  }
+}
+
+.guideFrame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #022448, #32236d, #3e082e);
+  padding: 60px 12px;
+  overflow: hidden;
+  .guideDescription {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    width: 100%;
+    max-width: 380px;
+    margin-right: auto;
+    color: $only-white;
+  }
+  .guideImgBlock {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 488px;
+    height: 100%;
+    background: linear-gradient(to bottom, #fc5c06, #fda015);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .tobBorder {
+      width: 100%;
+      height: 6px;
+      background: #2e236a;
+    }
+    .bottomBorder {
+      width: 100%;
+      height: 6px;
+      background: #2e236a;
+    }
+  }
+}
+
+.topLine {
+  width: 100%;
+  max-width: 600px;
+  height: 12px;
+  background: $darkGrey;
+  position: absolute;
+  top: 0;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  left: 16.5%;
+  right: 16.5%;
+  z-index: 1;
+}
+.bottomLine {
+  width: 100%;
+  max-width: 600px;
+  height: 12px;
+  background: $darkGrey;
+  position: absolute;
+  bottom: 0;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  left: 16.5%;
+  right: 16.5%;
+}

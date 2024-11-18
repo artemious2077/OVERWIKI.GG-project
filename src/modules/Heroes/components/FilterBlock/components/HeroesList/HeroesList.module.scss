@@ -7,6 +7,7 @@
   font-family: 'NATS';
   cursor: pointer;
   transition: 0.18s;
+  transition: 0.1s;
   &:hover {
     transform: scale(106%);
   }
@@ -16,7 +17,6 @@
   .avatar {
     background: $hero-bg;
     border: 2px solid $only-white;
-    transition: 0.1s;
   }
   .name {
     display: flex;
@@ -26,14 +26,14 @@
     gap: 15px;
     margin-bottom: 15px;
     .classIcon {
+      filter: brightness(0);
+      width: 30px;
+      height: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid #000;
+      border: 1px solid $only-black;
       border-radius: 2px;
-      height: 30px;
-      width: 30px;
-      filter: brightness(0);
     }
     p {
       font-size: 24px;

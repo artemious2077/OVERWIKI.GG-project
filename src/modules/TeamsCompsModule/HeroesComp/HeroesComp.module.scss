@@ -14,9 +14,14 @@
   align-items: center;
   gap: 25px;
   padding-bottom: 25px;
+  transition: 0.2s;
+  &:hover {
+    transform: scale(110%);
+  }
   .heroAvatar {
     object-fit: cover;
     border: 2px solid $only-white;
+    background: radial-gradient(circle, #f7bf83 30%, #e0416b 93%);
   }
   .heroInfoBlock {
     display: flex;

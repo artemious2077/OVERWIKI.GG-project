@@ -17,7 +17,7 @@ export const MapsBanner = () => {
     <main>
       {bannerData.map((item) => (
         <section className={styles.bannerSection} key={item.id}>
-          <div className={styles.gradient}></div>
+          <div className={styles.gradient} />
           <Image
             src={item.banner}
             alt='banner'
