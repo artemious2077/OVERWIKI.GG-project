@@ -5,6 +5,9 @@
   gap: 6px;
   padding: 30px 12px;
   background: $heroesList-bg;
+  clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 16px, 100% 100%, 0 100%);
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .heroFrame {
   width: 194px;

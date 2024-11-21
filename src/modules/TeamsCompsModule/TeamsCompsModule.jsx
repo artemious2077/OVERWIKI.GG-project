@@ -16,9 +16,11 @@ export const TeamsCompsModule = () => {
     <section className={styles.compsSection}>
       {teamsComps.map((item) => (
         <div key={item.id}>
-          <Typography variant='h1' className={styles.compsTitle}>
-            {item.comp_title}
-          </Typography>
+          <div className={styles.titleWrapper}>
+            <Typography variant='h1' className={styles.compsTitle}>
+              {item.comp_title}
+            </Typography>
+          </div>
           <HeroesComp heroesComp={item} />
         </div>
       ))}
