@@ -9,8 +9,11 @@ export const OtherHeroes = ({ otherHeroesProp }) => {
   const { otherHeroes, otherHeroesRequest } = useOtherHeroes()
 
   useEffect(() => {
-    otherHeroesRequest()
-  }, [otherHeroesRequest])
+    //По скольку otherHeroesProp передаёт ключевые значения, укажим
+    //otherHeroesProp.class_description в ф-ции запроса, для отображения
+    //отфильтрованных героев +class_description ключ указан у нас в логике запроса
+    otherHeroesRequest(otherHeroesProp.class_description)
+  }, [otherHeroesRequest, otherHeroesProp.class_description])
 
   return (
     <section className={styles.otherHeroesSection}>

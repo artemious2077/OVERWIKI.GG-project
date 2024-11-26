@@ -5,8 +5,14 @@ const endpoint = '/heroes'
 
 export const useOtherHeroes = create((set) => ({
   otherHeroes: [],
-  otherHeroesRequest: async () => {
+  otherHeroesRequest: async (heroClass) => {
     const response = await Requester.get(endpoint)
-    set({ otherHeroes: response.data.slice(0, 6) })
+    // Динамичная фильтрация героев по классу конкретного героя
+    const heroFilter = response.data.filter(
+      (hero) => hero.class_description === heroClass,
+    )
+    const randomHeroes = heroFilter.sort(() => 0.5 - Math.random())
+    const selectedRandomHeroes = randomHeroes.slice(0, 6)
+    set({ otherHeroes: selectedRandomHeroes })
   },
 }))
