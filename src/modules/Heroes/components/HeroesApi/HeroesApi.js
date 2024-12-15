@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { Requester } from '@/utils/Requester/Requester'
 
-const ENDPOINT = '/heroes'
+const ENDPOINT = '/all_heroes'
 
 export const useHeroes = create((set) => ({
   Heroes: [],

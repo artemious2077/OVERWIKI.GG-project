@@ -3,7 +3,7 @@ import styles from './HeroesList.module.scss'
 import Image from 'next/image'
 
 export const HeroesList = ({ heroes }) => {
-  // проверка на явление массивом
+  // проверка на то, что данные приходят массивом
   // if (!Array.isArray(heroes)) {
   //   return null
   // }

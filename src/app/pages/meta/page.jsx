@@ -3,7 +3,7 @@ import { TeamsCompsModule } from '@/modules/TeamsCompsModule/TeamsCompsModule'
 import styles from './teams-comps.module.scss'
 import { TopBanner } from '@/UI/components/TopBanner/TopBanner'
 
-export const TeamsComps = () => {
+export const Meta = () => {
   return (
     <main className={styles.teamsCompsPage}>
       <TopBanner />
@@ -11,4 +11,4 @@ export const TeamsComps = () => {
     </main>
   )
 }
-export default TeamsComps
+export default Meta

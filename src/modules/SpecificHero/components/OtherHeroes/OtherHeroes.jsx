@@ -11,7 +11,7 @@ export const OtherHeroes = ({ otherHeroesProp }) => {
   useEffect(() => {
     //По скольку otherHeroesProp передаёт ключевые значения, укажим
     //otherHeroesProp.class_description в ф-ции запроса, для отображения
-    //отфильтрованных героев +class_description ключ указан у нас в логике запроса
+    //отфильтрованных героев, так же class_description ключ указан у нас в логике запроса
     otherHeroesRequest(otherHeroesProp.class_description)
   }, [otherHeroesRequest, otherHeroesProp.class_description])
 

@@ -11,8 +11,8 @@ export const Links = () => {
       <Link href='/pages/maps' className={styles.link}>
         Maps
       </Link>
-      <Link href='/pages/teams-comps' className={styles.link}>
-        Teams
+      <Link href='/pages/meta' className={styles.link}>
+        Meta
       </Link>
       <Link href='/pages/tier-list' className={styles.link}>
         Tier List
