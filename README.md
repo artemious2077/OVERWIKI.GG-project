@@ -7,6 +7,6 @@ I have a technical problems with Supabase RDBMS...
 Forntend: NEXTjs, React JSX (на TypeScript ещё не переведён), Zustand (как менеджер состояния так и библиотека для создания хуков), SCSS, тесты написаны на Jest, HTML5.
 Backend: Supabase (как полная замена привычного бэкенда), PostgresSQL, SQL.
 
-Дизайн был составлен мной лично, проанализировав изначально сайты конкурентов и выявив слабые и сильные стороны конкурентов [figma](https://www.figma.com/design/KcjZvGldUKFh6UooDA88j5/gameDev---game-WIKI?m=auto&t=MpUvPZtIkXbQNMmK-6)
+Дизайн был составлен мной лично, проанализировав изначально сайты конкурентов и выявив слабые и сильные стороны конкурентов [figma](https://www.figma.com/design/KcjZvGldUKFh6UooDA88j5/gameDev---game-WIKI?m=auto&t=MpUvPZtIkXbQNMmK-6) (на макете наглядный пример, как сейчас выглядит сайт)
 
 Как решу технические проблемы и перезалью весь SQL код, документация будет.
